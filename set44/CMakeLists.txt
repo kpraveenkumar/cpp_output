@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.10)
+project(cpp_output_set36)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_FLAGS "-O3 -std=c++17 -pthread")
+add_executable(printf_output src/printf_output.cpp)
+add_executable(sizeof_pointer_char src/sizeof_pointer_char.cpp)
+add_executable(ascii_compare src/ascii_compare.cpp)
+add_executable(binary_and src/binary_and.cpp)
