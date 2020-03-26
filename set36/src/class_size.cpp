@@ -6,23 +6,21 @@ class A {
   void g();
   int x;
 };
-class B{
-    int f();
-    void g();
-    int x;
+class B {
+  int f();
+  void g();
+  int x;
 };
-class C{
+class C {
 public:
-    int f()
-    {
-        int* x=new int[1000];
-        return 0;
-    }
-    void g(){
-        cout<<"Hallo";
-    }
+  int f() {
+    int *x = new int[1000];
+    return 0;
+  }
+  void g() { cout << "Hallo"; }
+
 private:
-    int x;
+  int x;
 };
 int main() {
   cout << "Size of class:" << sizeof(A) << endl;
@@ -31,6 +29,7 @@ int main() {
   C c;
   cout << "Size of object:" << sizeof(c) << endl;
   cout << "Size of function with return int :" << sizeof(c.f()) << endl;
-  //cout << "Size of function with return void:" << sizeof(c.g()) << endl; // Compilation issue with sizeof(void)
+  // cout << "Size of function with return void:" << sizeof(c.g()) << endl; //
+  // Compilation issue with sizeof(void)
   return 0;
 }
